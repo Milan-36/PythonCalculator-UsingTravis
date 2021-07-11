@@ -21,3 +21,10 @@ class MyTestCase(unittest.TestCase):
             self.assertEqual(self.calculator.add(row[StaticVariables.val1], row[StaticVariables.val2]),
                              int(row[StaticVariables.result]))
             self.assertEqual(self.calculator.result, int(row[StaticVariables.result]))
+
+    def test_subtract_method_calculator(self):
+        test_subtraction_data = CsvReader(StaticVariables.Subtraction_csv).data
+        for row in test_subtraction_data:
+            self.assertEqual(self.calculator.subtract(row[StaticVariables.val1], row[StaticVariables.val2]),
+                             int(row[StaticVariables.result]))
+            self.assertEqual(self.calculator.result, int(row[StaticVariables.result]))
