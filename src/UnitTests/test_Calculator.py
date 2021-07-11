@@ -28,3 +28,10 @@ class MyTestCase(unittest.TestCase):
             self.assertEqual(self.calculator.subtract(row[StaticVariables.val1], row[StaticVariables.val2]),
                              int(row[StaticVariables.result]))
             self.assertEqual(self.calculator.result, int(row[StaticVariables.result]))
+
+    def test_multiple_method_calculator(self):
+        test_multiplication_data = CsvReader(StaticVariables.Multiplication_csv).data
+        for row in test_multiplication_data:
+            self.assertEqual(self.calculator.multiple(row[StaticVariables.val1], row[StaticVariables.val2]),
+                             int(row[StaticVariables.result]))
+            self.assertEqual(self.calculator.result, int(row[StaticVariables.result]))

@@ -1,5 +1,6 @@
 from src.Calculator.Addition import addition
 from src.Calculator.Subtraction import subtraction
+from src.Calculator.Multiplication import multiplication
 
 
 class Calculator:
@@ -14,4 +15,8 @@ class Calculator:
 
     def subtract(self, a, b):
         self.result = subtraction(a, b)
+        return self.result
+
+    def multiple(self, a, b):
+        self.result = multiplication(a, b)
         return self.result
