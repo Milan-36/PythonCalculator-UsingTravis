@@ -1,3 +1,4 @@
+# always put test in prefix on the test file name.
 import unittest  # to test individual units of source code
 from src.Calculator.Calculator import Calculator  # where the operations are performed
 from src.CsvReader.CSVReader import CsvReader  # to read the csv file
