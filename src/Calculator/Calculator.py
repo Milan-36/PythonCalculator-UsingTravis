@@ -1,6 +1,7 @@
 from src.Calculator.Addition import addition
 from src.Calculator.Subtraction import subtraction
 from src.Calculator.Multiplication import multiplication
+from src.Calculator.Division import division
 
 
 class Calculator:
@@ -19,4 +20,8 @@ class Calculator:
 
     def multiple(self, a, b):
         self.result = multiplication(a, b)
+        return self.result
+
+    def divide(self, a, b):
+        self.result = division(a, b)
         return self.result

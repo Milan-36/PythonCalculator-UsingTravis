@@ -35,3 +35,10 @@ class MyTestCase(unittest.TestCase):
             self.assertEqual(self.calculator.multiple(row[StaticVariables.val1], row[StaticVariables.val2]),
                              int(row[StaticVariables.result]))
             self.assertEqual(self.calculator.result, int(row[StaticVariables.result]))
+
+    def test_divide_method_calculator(self):
+        test_division_data = CsvReader(StaticVariables.Division_csv).data
+        for row in test_division_data:
+            self.assertAlmostEqual(self.calculator.divide(row[StaticVariables.val1], row[StaticVariables.val2]),
+                                   float(row[StaticVariables.result]))
+            self.assertAlmostEqual(self.calculator.result, float(row[StaticVariables.result]))
