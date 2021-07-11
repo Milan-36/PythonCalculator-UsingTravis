@@ -42,3 +42,9 @@ class MyTestCase(unittest.TestCase):
             self.assertAlmostEqual(self.calculator.divide(row[StaticVariables.val1], row[StaticVariables.val2]),
                                    float(row[StaticVariables.result]))
             self.assertAlmostEqual(self.calculator.result, float(row[StaticVariables.result]))
+
+    def test_square_method_calculator(self):
+        test_square_data = CsvReader(StaticVariables.Square_csv).data
+        for row in test_square_data:
+            self.assertEqual(self.calculator.sq(row[StaticVariables.val1]), int(row[StaticVariables.result]))
+            self.assertEqual(self.calculator.result, int(row[StaticVariables.result]))
