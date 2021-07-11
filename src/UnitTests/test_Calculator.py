@@ -1,6 +1,6 @@
-import unittest
-from src.Calculator.Calculator import Calculator
-from src.CsvReader.CSVReader import CsvReader
+import unittest  # to test individual units of source code
+from src.Calculator.Calculator import Calculator  # where the operations are performed
+from src.CsvReader.CSVReader import CsvReader  # to read the csv file
 from src.StaticProperties.Static_Variables import StaticVariables
 
 
@@ -17,6 +17,7 @@ class MyTestCase(unittest.TestCase):
     def test_add_method_calculator(self):
         # fetch the data from csv and place in test_addition_data
         test_addition_data = CsvReader(StaticVariables.Addition_csv).data
+
         for row in test_addition_data:
             self.assertEqual(self.calculator.add(row[StaticVariables.val1], row[StaticVariables.val2]),
                              int(row[StaticVariables.result]))
