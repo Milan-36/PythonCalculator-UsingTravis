@@ -1,4 +1,3 @@
-# reference: https://stackabuse.com/calculating-variance-and-standard-deviation-in-python
 from src.Statistics.Mean import calculate_mean
 from src.Calculator.Square import square
 from src.Calculator.Division import division

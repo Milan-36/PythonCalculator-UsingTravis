@@ -1,4 +1,3 @@
-# reference: https://www.geeksforgeeks.org/finding-mean-median-mode-in-python-without-libraries/
 from src.Calculator.Addition import addition
 from src.Calculator.Division import division
 from src.Calculator.Subtraction import subtraction

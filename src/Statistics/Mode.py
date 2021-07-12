@@ -1,4 +1,3 @@
-# reference: https://www.geeksforgeeks.org/finding-mean-median-mode-in-python-without-libraries/
 from collections import Counter
 
 

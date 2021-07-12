@@ -1,0 +1,5 @@
+For Mean, Mode, Median:
+https://www.geeksforgeeks.org/finding-mean-median-mode-in-python-without-libraries/
+
+For Variance, Standard Deviation:
+https://stackabuse.com/calculating-variance-and-standard-deviation-in-python
