@@ -16,4 +16,6 @@ def calculate_median(data):
             result = data[int(division(2, total))]
         return result
     except ValueError:
-        print("ERROR!  Data is Empty.  Try again.")
+        print("No valid integer!")
+    except IndexError:
+        print("It's a empty list.")

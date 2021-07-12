@@ -18,10 +18,13 @@ class MyTestCase(unittest.TestCase):
         self.assertIsInstance(self.statistics, Statistics)
 
     def test_mean_calculator(self):
-        self.assertEqual(self.statistics.mean(self.testData), 15)
+        self.assertEqual(self.statistics.mean(self.testData), 30)
 
     def test_median_calculator(self):
-        self.assertEqual(self.statistics.median(self.testData), 25)
+        self.assertEqual(self.statistics.median(self.testData), 20)
+
+    def test_mode_calculator(self):
+        self.assertEqual(self.statistics.mode(self.testData), [10])
 
 
 if __name__ == '__main__':
