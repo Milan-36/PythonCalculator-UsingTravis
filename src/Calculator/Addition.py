@@ -1,5 +1,5 @@
 def addition(a, b):
     try:
         return float(a) + float(b)
-    except ValueError as error:
+    except ValueError:
         print("No valid integer!")

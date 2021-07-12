@@ -1,5 +1,5 @@
 def square(a):
     try:
         return float(a) * float(a)
-    except ValueError as error:
+    except ValueError:
         print("No valid integer!")
