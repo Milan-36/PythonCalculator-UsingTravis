@@ -20,11 +20,11 @@ This is **Project 2** of **IS 601**. A Python program using principles of automa
 * [Square root](https://github.com/Milan-36/PythonCalculator-UsingTravis/blob/master/src/Calculator/Square_Root.py)
 
 ## Statistics Operations:
-* Mean
-* Median
-* Mode
-* Variance
-* Standard Deviation 
+* [Mean](https://github.com/Milan-36/PythonCalculator-UsingTravis/blob/master/src/Statistics/Mean.py),
+* [Median](https://github.com/Milan-36/PythonCalculator-UsingTravis/blob/master/src/Statistics/Median.py),
+* [Mode](https://github.com/Milan-36/PythonCalculator-UsingTravis/blob/master/src/Statistics/Mode.py),
+* [Variance](https://github.com/Milan-36/PythonCalculator-UsingTravis/blob/master/src/Statistics/Variance.py),
+* [Standard Deviation](https://github.com/Milan-36/PythonCalculator-UsingTravis/blob/master/src/Statistics/StandardDeviation.py) 
 
 ## Resources required  to run the Unit tests are,
 
