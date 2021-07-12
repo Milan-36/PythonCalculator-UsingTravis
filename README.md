@@ -12,12 +12,12 @@ This is **Project 2** of **IS 601**. A Python program using principles of automa
 * Also used Travis CI in this project. IT is a hosted continuous integration service used to build and test software projects hosted on GitHub.
 
 ## Arithmetic Operations:
-* Addition,
-* Subtraction,
-* Multiplication,
-* Division,
-* Square,
-* Square root
+* [Addition](https://github.com/Milan-36/PythonCalculator-UsingTravis/blob/master/src/Calculator/Addition.py),
+* [Subtraction](https://github.com/Milan-36/PythonCalculator-UsingTravis/blob/master/src/Calculator/Subtraction.py),
+* [Multiplication](https://github.com/Milan-36/PythonCalculator-UsingTravis/blob/master/src/Calculator/Multiplication.py),
+* [Division](https://github.com/Milan-36/PythonCalculator-UsingTravis/blob/master/src/Calculator/Division.py),
+* [Square](https://github.com/Milan-36/PythonCalculator-UsingTravis/blob/master/src/Calculator/Square.py),
+* [Square root](https://github.com/Milan-36/PythonCalculator-UsingTravis/blob/master/src/Calculator/Square_Root.py)
 
 ## Statistics Operations:
 * Mean
