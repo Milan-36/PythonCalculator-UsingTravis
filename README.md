@@ -3,20 +3,28 @@
 
 # PythonCalculator
 
-This is **Project 1** of **IS 601**. A Python program using principles of automated testing..
+This is **Project 2** of **IS 601**. A Python program using principles of automated testing.
 
 ## Description:
 * The calculator is one application that we all use in our day to day lives. This **PythonCalculator** is a Python program using principles of automated testing.
 * It performs basic arithmetic operations. I Learned to use static methods, object methods, object attributes/properties.
-* And also used the CSV files to load data for unit tests. There's each file to test the associated operation. 
+* And also used the CSV files to load data for unit tests. There's each file to test the associated operation.
+* Also used Travis CI in this project. IT is a hosted continuous integration service used to build and test software projects hosted on GitHub.
 
-## Operations:
+## Arithmetic Operations:
 * Addition,
 * Subtraction,
 * Multiplication,
 * Division,
 * Square,
 * Square root
+
+## Statistics Operations:
+* Mean
+* Median
+* Mode
+* Variance
+* Standard Deviation 
 
 ## Resources required  to run the Unit tests are,
 
@@ -30,15 +38,15 @@ This is **Project 1** of **IS 601**. A Python program using principles of automa
 
 ## Example #1:
 ### Unit Test for the addition:
-![Addition_code](https://github.com/Milan-36/PythonCalculator/blob/master/src/screenshot/Add_method.png)
+![Addition_code](https://github.com/Milan-36/PythonCalculator-UsingTravis/blob/master/src/Screenshot/Add_method.png)
 
 ### Output of Unit Test for addition (Run in Docker):
-![Addition_run](https://github.com/Milan-36/PythonCalculator/blob/master/src/screenshot/Add_output.png)
+![Addition_run](https://github.com/Milan-36/PythonCalculator-UsingTravis/blob/master/src/Screenshot/Add_output.png)
 
 
 ## Example #2:
 ### Unit Test for the squart root:
-![Addition_code](https://github.com/Milan-36/PythonCalculator/blob/master/src/screenshot/sqrt_method.png)
+![Addition_code](https://github.com/Milan-36/PythonCalculator-UsingTravis/blob/master/src/Screenshot/sqrt_method.png)
 
 ### Output of Unit Test for squart root (Run in Docker):
-![Addition_run](https://github.com/Milan-36/PythonCalculator/blob/master/src/screenshot/sqrt_output.png)
+![Addition_run](https://github.com/Milan-36/PythonCalculator-UsingTravis/blob/master/src/Screenshot/sqrt_output.png)
