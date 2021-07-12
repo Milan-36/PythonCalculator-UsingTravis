@@ -29,6 +29,9 @@ class MyTestCase(unittest.TestCase):
     def test_variance_calculator(self):
         self.assertEqual(self.statistics.variance(self.testData), 520)
 
+    def test_standardDeviation_calculator(self):
+        self.assertEqual(round(self.statistics.standardDeviation(self.testData), 3), 22.804)
+
 
 if __name__ == '__main__':
     unittest.main()
