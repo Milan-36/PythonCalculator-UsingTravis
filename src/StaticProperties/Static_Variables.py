@@ -5,6 +5,7 @@ class StaticVariables:
     Division_csv = "./src/UnitTests/data/Unit_Test_Division.csv"
     Square_csv = "./src/UnitTests/data/Unit_Test_Square.csv"
     SquareRoot_csv = "./src/UnitTests/data/Unit_Test_Square_Root.csv"
+    Statistics_csv = "./src/UnitTests/data/Unit_Test_Statistics.csv"
     val1 = "Value 1"
     val2 = "Value 2"
     result = "Result"
