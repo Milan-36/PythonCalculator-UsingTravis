@@ -1,7 +1,5 @@
 import csv
-from pathlib import Path
-
-
+from src.FileLibrary.FindAbsolutePath import findAbsolutePath
 # from pprint import pprint
 
 
@@ -15,10 +13,7 @@ class CsvReader:
 
     def __init__(self, filepath):
         self.data = []
-        relative = Path(filepath)
-        absolute = relative.absolute()  # Travis need absolute path to find data file
-        with open(absolute) as text_data:
-            # with open(filepath) as text_data:
+        with open(findAbsolutePath(filepath)) as text_data:
             csv_data = csv.DictReader(text_data, delimiter=',')
             for row in csv_data:
                 self.data.append(row)
