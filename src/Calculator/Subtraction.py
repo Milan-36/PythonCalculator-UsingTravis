@@ -1,2 +1,6 @@
 def subtraction(a, b):
-    return float(b) - float(a)
+    try:
+        return float(b) - float(a)
+    except ValueError as error:
+        error = "No valid integer!"
+        return error

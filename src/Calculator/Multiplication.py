@@ -1,2 +1,6 @@
 def multiplication(a, b):
-    return float(a) * float(b)
+    try:
+        return float(a) * float(b)
+    except ValueError as error:
+        error = "No valid integer!"
+        return error
