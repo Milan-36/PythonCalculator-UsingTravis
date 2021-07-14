@@ -44,6 +44,13 @@ class MyTestCase(unittest.TestCase):
             test_data = int(x)
             self.assertEqual(isinstance(test_data, int), True)
 
+    def test_random_list_with_seed_decimal(self):
+        test_decimal_list = self.random.random_list_with_seed_decimal(self.start, self.end, self.length, self.seed)
+        pprint(test_decimal_list)
+        for x in test_decimal_list:
+            test_data = float(x)
+            self.assertEqual(isinstance(test_data, float), True)
+
 
 if __name__ == '__main__':
     unittest.main()
