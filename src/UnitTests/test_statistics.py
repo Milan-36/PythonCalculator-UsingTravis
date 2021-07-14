@@ -1,15 +1,16 @@
 # always put test in prefix on the test file name.
 import unittest  # to test individual units of source code
-# from random import seed, randint
-# from numpy import var, std
+
+import numpy
+from numpy import var, std
 from src.Statistics.Statistics import Statistics  # where the operations are performed
 from src.CsvReader.CSVReader import CsvReader  # to read the csv file
 from src.StaticProperties.Static_Variables import StaticVariables
 
 
 class MyTestCase(unittest.TestCase):
+
     def setUp(self) -> None:
-        # seed(5)
         self.statistics = Statistics()
         self.CSVData = CsvReader(StaticVariables.Statistics_csv).data
         self.testData = [int(row[StaticVariables.val1]) for row in self.CSVData]
@@ -18,19 +19,23 @@ class MyTestCase(unittest.TestCase):
         self.assertIsInstance(self.statistics, Statistics)
 
     def test_mean_calculator(self):
-        self.assertEqual(self.statistics.mean(self.testData), 30)
+        mean_result = numpy.mean(self.testData)
+        self.assertEqual(self.statistics.mean(self.testData), mean_result)
 
     def test_median_calculator(self):
-        self.assertEqual(self.statistics.median(self.testData), 20)
+        median_result = numpy.median(self.testData)
+        self.assertEqual(self.statistics.median(self.testData), median_result)
 
     def test_mode_calculator(self):
         self.assertEqual(self.statistics.mode(self.testData), [10])
 
     def test_variance_calculator(self):
-        self.assertEqual(self.statistics.variance(self.testData), 520)
+        variance_result = var(self.testData)
+        self.assertEqual(self.statistics.variance(self.testData), variance_result)
 
     def test_standardDeviation_calculator(self):
-        self.assertEqual(round(self.statistics.standardDeviation(self.testData), 3), 22.804)
+        standard_deviation_result = (std(self.testData))
+        self.assertEqual(self.statistics.standardDeviation(self.testData), standard_deviation_result)
 
 
 if __name__ == '__main__':

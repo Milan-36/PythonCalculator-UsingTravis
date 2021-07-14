@@ -31,4 +31,3 @@ class Statistics(Calculator):
     def standardDeviation(self, data):
         self.result = calculate_standardDeviation(data)
         return self.result
-
