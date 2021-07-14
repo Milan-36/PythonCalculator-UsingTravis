@@ -32,10 +32,10 @@ class MyTestCase(unittest.TestCase):
                          test_seed_int_random)
 
     def test_random_with_seed_decimal(self):
-        test_seed_decimal_random = self.random.random_num_with_seed_decimal(self.start, self.end, self.seed)
-        pprint(test_seed_decimal_random)
+        test_sed_decimal_random = self.random.random_num_with_seed_decimal(self.start, self.end, self.seed)
+        pprint(test_sed_decimal_random)
         self.assertEqual(self.random.random_num_with_seed_decimal(self.start, self.end, self.seed),
-                         test_seed_decimal_random)
+                         test_sed_decimal_random)
 
 
 if __name__ == '__main__':
