@@ -15,10 +15,15 @@ class MyTestCase(unittest.TestCase):
     def test_instantiate_calculator_self(self):
         self.assertIsInstance(self.random, RandomGenerator)
 
+    def test_random_without_seed_integer(self):
+        test_int_random = self.random.random_num_without_seed_integer(self.start, self.end)
+        pprint(test_int_random)
+        self.assertEqual(isinstance(self.random.random_num_without_seed_integer(self.start, self.end), int), True)
+
     def test_random_without_seed_decimal(self):
-        decimal_random = self.random.random_without_seed_decimal(self.start, self.end)
-        pprint(decimal_random)
-        self.assertEqual(isinstance(self.random.random_without_seed_decimal(self.start, self.end), float), True)
+        test_decimal_random = self.random.random_num_without_seed_decimal(self.start, self.end)
+        pprint(test_decimal_random)
+        self.assertEqual(isinstance(self.random.random_num_without_seed_decimal(self.start, self.end), float), True)
 
 
 if __name__ == '__main__':

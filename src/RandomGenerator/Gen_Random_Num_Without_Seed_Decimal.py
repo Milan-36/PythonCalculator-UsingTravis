@@ -2,7 +2,6 @@ from numpy.random import uniform
 
 
 def Gen_Random_Num_Without_Seed_Decimal(start, end):
-    rand = uniform(start, end)
-    # round up upto two decimal place digit
-    rounded_decimal = round(rand, 2)
-    return rounded_decimal
+    random = uniform(start, end)  # uniform() is a method specified in the random library
+    random_decimal = round(random, 4)      # rounding the number upto 4 decimal places
+    return random_decimal
