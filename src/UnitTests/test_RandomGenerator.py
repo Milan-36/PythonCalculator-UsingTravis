@@ -6,11 +6,11 @@ from src.RandomGenerator.RandomGenerator import RandomGenerator
 class MyTestCase(unittest.TestCase):
     def setUp(self) -> None:
         self.random = RandomGenerator()
+        # Assigning start and end range of numbers to perform random function.
         self.start = 1
         self.end = 1000
-        self.length = 3
-        self.seed = 5
-        self.num_val = 3
+        self.length = 5  # no of random number to append in List.
+        self.seed = 5  # Seed function is used to save the state of a random function.
 
     def test_instantiate_calculator_self(self):
         self.assertIsInstance(self.random, RandomGenerator)
