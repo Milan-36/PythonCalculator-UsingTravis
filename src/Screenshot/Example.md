@@ -25,4 +25,4 @@
 
 ## Example #4:
 #### Output of the Unit Tests that are generating random numbers, and random number list with and without seeds:
-<img src="https://github.com/Milan-36/PythonCalculator-UsingTravis/blob/master/src/Screenshot/Random_Num_Output.png">
+<img src="https://github.com/Milan-36/PythonCalculator-UsingTravis/blob/master/src/Screenshot/Random_Num_List_Output.png">
