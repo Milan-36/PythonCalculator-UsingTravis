@@ -52,4 +52,4 @@
 <img src="https://github.com/Milan-36/PythonCalculator-UsingTravis/blob/master/src/Screenshot/Travis-CI_Bulid_passed.png">
 
 #### Logs of Git ripository after the Travis-CI Build Passed:
-<img src="https://github.com/Milan-36/PythonCalculator-UsingTravis/blob/master/src/Screenshot/Logs_Travis-Ci_passed.png">
+<img src="https://github.com/Milan-36/PythonCalculator-UsingTravis/blob/master/src/Screenshot/Travis-CI_Logs.PNG">
