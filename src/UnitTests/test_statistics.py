@@ -6,6 +6,7 @@ from numpy import var, std
 from src.Statistics.Statistics import Statistics  # where the operations are performed
 from src.CsvReader.CSVReader import CsvReader  # to read the csv file
 from src.StaticProperties.Static_Variables import StaticVariables
+from pprint import pprint
 
 
 class MyTestCase(unittest.TestCase):
@@ -21,6 +22,7 @@ class MyTestCase(unittest.TestCase):
     def test_mean_calculator(self):
         mean_result = numpy.mean(self.testData)
         self.assertEqual(self.statistics.mean(self.testData), mean_result)
+        pprint(mean_result)
 
     def test_median_calculator(self):
         median_result = numpy.median(self.testData)
@@ -32,10 +34,12 @@ class MyTestCase(unittest.TestCase):
     def test_variance_calculator(self):
         variance_result = var(self.testData)
         self.assertEqual(self.statistics.variance(self.testData), variance_result)
+        pprint(variance_result)
 
     def test_standardDeviation_calculator(self):
         standard_deviation_result = (std(self.testData))
         self.assertEqual(self.statistics.standardDeviation(self.testData), standard_deviation_result)
+        pprint(standard_deviation_result)
 
 
 if __name__ == '__main__':
